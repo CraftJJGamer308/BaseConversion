@@ -1,26 +1,38 @@
 <html>
+<head>
+    <title>Base Conversion</title>
     <script src="script.js"></script>
     <style>
         h1{
             color:darkblue;
         }
+        th{
+            text-align: left;
+        }
     </style>
-    <head>
-        <title>Base Conversion</title>
-    </head>
-    <body>
-        <h1>Base Conversion Program</h1>
-        <p>Made by Craft JJ Industries</p>
+</head>
+<body>
+    <h1>Base Conversion Program</h1>
+    <p>
+        Made by Craft JJ Industries 
+        (<a href="https://github.com/CraftJJGamer308">GITHUB</a>)
+    </p>
 
-        <hr>
+    <hr>
 
-        <p>
-            input decimal: <input type="text" id="n"> <br>
-            input base: <input type="text" id="base"> <br>
-            <input type="button" value="submit" onclick="f();">
-        </p>
-        
-        <p id="result"></p>
-
-    </body>
+    <table>
+        <tr>
+            <th>input decimal:</th>
+            <th><input type="text" id="n" placeholder="integer"></th>
+        </tr>
+        <tr>
+            <th>input base:</th>
+            <th><input type="text" id="base" placeholder="integer greater than 1"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="calculate" onclick="f();"></th>
+        </tr>
+    </table>
+    <p id="result"></p>
+</body>
 </html>
